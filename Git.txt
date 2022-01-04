@@ -1,0 +1,183 @@
+Git intro1
+Câu lệnh
+git commit
+git commit
+
+Git intro2
+Câu lệnh
+git branch bugFix
+git checkout bugFix
+
+Git intro3
+Câu lệnh
+git checkout -b bugFix
+git commit
+git checkout main
+git commit
+git merge bugFix
+
+Git intro4
+Câu lệnh
+git checkout -b bugFix
+git commit
+git checkout main
+git commit
+git checkout bugFix
+git rebase main
+
+Git rampup1
+Câu lệnh
+git checkout C4
+
+Git rampup2
+Câu lệnh
+git checkout bugFix
+git checkout HEAD^
+or
+git checkout C3
+
+Git rampup3
+Câu lệnh
+git checkout HEAD^
+git branch -f main C6
+git branch -f bugFix C0
+
+Git rampup4
+Câu lệnh
+git reset HEAD^
+git checkout pushed
+git revert pushed
+
+Git move1
+Câu lệnh
+git cherry-pick C3 C4 C7
+
+Git move2
+Câu lệnh
+git rebase -i HEAD~4
+
+Git mixed1
+Câu lệnh
+git rebase -i HEAD~3
+git branch -f main C4'
+
+Git mixed2
+Câu lệnh
+git rebase -i HEAD~2
+git commit --amend
+git rebase -i HEAD~2
+git branch -f main C3''
+
+Git mixed3
+Câu lệnh
+git checkout main
+git cherry-pick C2
+git branch -f main C1
+git cherry-pick C2' C3
+
+Git mixed4
+Câu lệnh
+git tag v0 C1
+git tag v1 C2
+git checkout C2
+
+Git mixed5
+Câu lệnh
+git commit
+
+Git advanced1
+Câu lệnh
+git rebase main bugFix
+git rebase bugFix side
+git rebase side another
+git rebase another main
+
+Git advanced2
+Câu lệnh
+git branch -f bugWork HEAD~1^2~1
+
+
+Git advanced3
+Câu lệnh
+git checkout one
+git cherry-pick C4 C3 C2
+git checkout two
+git cherry-pick C5 C4 C3 C2
+git branch -f three C2
+Or
+git checkout C5
+git rebase -i HEAD~4
+git branch -f three C2
+git branch -f one C2'
+git checkout C5
+git rebase -i HEAD~4
+git branch -f two C2''
+
+Level remote5
+Câu lệnh thực hiện
+git clone
+git fakeTeamwork main 2
+git commit
+git pull
+
+Level remote6
+Câu Lệnh
+git commit
+git commit
+git push
+
+Level remote 7
+Câu Lệnh
+git clone
+git fakeTeamwork 1
+git commit
+git pull --rebase
+git push
+
+Level remoteAdvanced1
+Câu Lệnh
+git fetch
+git rebase main side1
+git rebase side1 side2
+git rebase side2 side3
+git rebase side3 main
+git push
+
+Level remoteAdvanced2
+git fetch
+git checkout side1
+git merge C8
+git checkout side2
+git merge side1
+git merge side3
+git branch -f side1 C2
+git branch -f side2 C4
+git rebase C11 main
+
+level remoteAdvanced3
+git checkout -b side o/main
+git commit
+git pull --rebase
+git push
+
+level remoteAdvanced4
+git push origin main
+git push origin foo
+
+level remoteAdvanced5
+git push origin main^:foo
+git push origin foo:main
+
+level remoteAdvanced6
+git fetch origin foo:main
+git fetch origin main^:foo
+git checkout foo
+git merge main
+
+level remoteAdvanced7
+git push origin :foo
+git fetch origin :bar
+
+level remoteAdvanced8
+git pull origin bar:foo
+git pull origin main:side
