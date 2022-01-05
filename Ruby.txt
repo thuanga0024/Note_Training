@@ -1,0 +1,29 @@
+1 số option hay trong ruby
++to_s()
+12345.to_s(2)    #=> "11000000111001"
+12345.to_s(8)    #=> "30071"
+12345.to_s(10)   #=> "12345"
+12345.to_s(16)   #=> "3039"
+
+Các số bên trong to_s tương ứng với các hệ số như là hệ nhị phân là 2 , lục phân là 8 , thập phân là 10 , thập lục phân là 16 
+Các số bên trong to_s thuộc trong khoảng từ 2 đến 36 như ( 2,8,10,16,36)
+
++str.reverse
+
+Đây là 1 option dùng để đảo ngược chuỗi
+VD. puts "Ruby".reverse
+output ta có được là ybuR
+
++tr
+Đây là 1 option dùng để thay đổi các kí tự đơn và không cần thông qua biểu thức chính quy , do đó Khi tìm thấy một ký tự khớp với 1 kí tự nào đó trong chuỗi đầu tiên ta truyền vào  thì nó sẽ được thay thế bằng 1 kí tự khác trong chỗi chứ thứ 2 tương ứng với vị trí ở bên chuỗi thứ nhất . Nếu mà chuỗi thứ 2 ngắn hơn chuỗi thứ nhất thì kí tự bị dư bên chuỗi 1 sẽ được thay thế bằng kí tự cuối của chuỗi thứ 2
+
+"hello".tr('el', 'ip')      #=> "hippo"
+"hello".tr('aeiou', '*')    #=> "h*ll*"
+"hello".tr('aeiou', 'AA*')  #=> "hAll*"
+
++gsub
+
+gsub có thể khớp các mẫu phức tạp bằng regex và thay thế bằng kết quả tính toán phức tạp, nhưng chậm hơn tr.
+
+
+
