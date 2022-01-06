@@ -25,7 +25,7 @@ output ta có được là ybuR
 
 gsub có thể khớp các mẫu phức tạp bằng regex và thay thế bằng kết quả tính toán phức tạp, nhưng chậm hơn tr.
 
-+delete
++str.delete
 
 Option này để xoá các ký tự có trong chuỗi mình truyền vào
 
@@ -46,5 +46,13 @@ Option này sẽ loại bỏ các ký tự trùng nhau liên tiếp trong chuỗ
 Option này sẽ loại bỏ tất cả các phần tử giống nhau ở trong mảng
 
 
++Array.select
+Option này sẽ lấy ra những phần tử trong mảng nếu nó thoả điều kiện của mình truyền vào
+
++Array.deleteif
+Option này sẽ xoá các phần tử trong mảng nếu nó thoả điều kiện của mình đưa ra
+
+scores = [ 97, 42, 75 ]
+scores.delete_if {|score| score < 80 }   #=> [97]
 
 
