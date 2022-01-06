@@ -25,5 +25,26 @@ output ta có được là ybuR
 
 gsub có thể khớp các mẫu phức tạp bằng regex và thay thế bằng kết quả tính toán phức tạp, nhưng chậm hơn tr.
 
++delete
+
+Option này để xoá các ký tự có trong chuỗi mình truyền vào
+
+VD
+str = "Hoang Thi Lien"
+str.delete('aeiouAEIOU')
+Output:
+Hng Th Ln
+
++char
+Option này dùng để chuyển một chuỗi thành mảng 
+str.chars tương đương với str.each_char.to_a
+
++squeeze
+Option này sẽ loại bỏ các ký tự trùng nhau liên tiếp trong chuỗi
+
++uniq
+Option này sẽ loại bỏ tất cả các phần tử giống nhau ở trong mảng
+
+
 
 

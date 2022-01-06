@@ -1,2 +1,5 @@
-n = 942
-puts (n / 10 + n % 10)
+str = "abcdeU"
+temp = ""
+str.each_char do |char|
+puts char if ['a','e','i','o','u'].include? char.downcase
+end
