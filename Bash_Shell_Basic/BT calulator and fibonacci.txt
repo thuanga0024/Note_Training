@@ -1,0 +1,60 @@
+================ Bài tập 1 ====================
+1. Đề bài: viết chương trình máy tính cơ bản, thực hiện các phép tính số học trên 2 toán tử với Input do người dùng nhập vào, gồm 3 tham số:
+- Tham số 1: phép tính. Bao gồm các phép tính cộng, trừ, nhân, chia.
+- Tham số 2: toán tử thứ nhất.
+- Tham số 3: toán tử thứ hai.
+
+2. Input được nhập dưới 2 dạng:
+- Command-line arguments. Ví dụ: ./calculator.sh phep_cong 20 10
+- User input: phep_cong, 20, 10 được user nhập vào tuần tự. Ví dụ:
+    . Nhập vào phép tinh: phep_cong
+    . Nhập toán tử thứ nhất: 20
+    . Nhập toán tử thứ hai: 10
+
+3. Output: được diễn giải dưới dạng ngôn ngữ tự nhiên. Ví dụ với toán tử 20 và 10 cho cả 2 cách input thì output là:
+    . Tổng của 20 và 10 là: 30
+    . Hiệu của 20 và 10 là: 10
+    . Tích của 20 và 10 là: 200
+    . Thương của 20 và 10 là: 2
+
+4. Yêu cầu mở rộng:
+- Với phép chia, toán tử thứ 2 phải khác 0. Nếu người dùng nhập vào 0 thì phải hiển thị câu cảnh báo và yêu cầu nhập lại cho đến khi nhận được số khác 0.
+- Sử dụng bc cho việc thực hiện các phép tính.
+- Sử dụng function cho các hàm cộng, trừ, nhân, chia và các tính năng cần thiết khác.
+- Sử dụng cấu trúc rẽ nhánh "case" để điều phối phép tính nhập vào. Thêm tính năng trợ giúp với cú pháp "-h" hoặc "--help" vào cấu trúc rẽ nhánh case, báo cho người dùng biết cách sử dụng chương trình.
+- Ghi log quá trình sử dụng calculator.sh của người dùng, bao gồm thời gian thực hiện chương trình, phép tính, các toán tử. Log được lưu trữ vào 1 file. Gợi ý: date là lệnh để lấy thời gian hiện tại trên hệ thống.
+- Tính năng mật khẩu: khi chạy calculator.sh, chương trình sẽ hiển thị yêu cầu nhập vào một mật khẩu để có thể tiếp tục sử dụng. Nếu sai mật khẩu, thông báo user và thoát chương trình. Gợi ý: thiết lập mật khẩu dạng plaintext trong calculator.sh và sử dụng so sánh với mật khẩu do người dùng nhập vào.
+
+
+================ Bài tập 2 ====================
+1. Đề bài: viết chương trình hiển thi đến số thứ n của dãy số Fibonacci, với n là số được nhập vào.
+
+2. Input được nhập dưới 2 dạng:
+- Command-line arguments. Ví dụ: ./fibonacci.sh 5
+- User input, ví dụ:
+    . Nhập vào số thứ n của dãy fibonacci: 5
+
+(Ghi chú: dãy Fibonacci là 1 dãy số bắt đầu bằng 0 hoặc 1, số tiếp theo là 1 số tự nhiên có giá trị bằng tổng của 2 số trước đó)
+
+3. Output:
+- Với số nhập vào là 5, ta có output như sau:
+Input: 5
+Fibonacci : 
+0
+1
+1
+2
+3
+
+- Với số nhập vào là 4, ta có output như sau:
+Input: 4
+Fibonacci: 
+0
+1
+1
+2
+
+
+4. Yêu cầu:
+- Sử dụng function cho các phép tính.
+- Sử dụng cấu trúc rẽ nhánh "case" để thêm tính năng trợ giúp với cú pháp "-h" hoặc "--help", báo cho người dùng biết cách sử dụng chương trình.

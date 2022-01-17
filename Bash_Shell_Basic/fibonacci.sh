@@ -16,4 +16,12 @@ fibonacy(){
     done
 }
 
-fibonacy
+case "$1" in
+	-h|--help)
+		echo "./fibonacci.sh number"
+		exit 1
+		;;
+	*)
+		fibonacy
+		;;
+esac
