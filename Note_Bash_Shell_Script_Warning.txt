@@ -1,0 +1,16 @@
+ps -eo pid=,etime=,args=
+PID --> ID of the running process
+etime sẽ lấy trường thời gian mà process đó đã chạy được bao lâu với định dạng [[dd-]hh:]mm:ss
+args sẽ lấy được command đang thực thi tiến trình
+Dấu = sau các trường sẽ chỉ lấy mỗi kết quả ko lấy các tên các cột
+
+ps -fp <pid> Để lấy xem command nào đang chạy pid này
+
+Set Up Mail
+
+sudo apt-get install bsd-mailx
+
+sudo apt-get install ssmtp
+
+https://viblo.asia/p/gui-mail-tu-dong-dung-bash-shell-va-mailx-XqakELWpeWK
+https://forums.raspberrypi.com/viewtopic.php?t=141152
